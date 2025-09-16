@@ -31,7 +31,6 @@ ESECUZIONE LOGICA
 const prezzoKm = 0.21;
 const scontoMinorenni = 0.2;
 const scontoOver65 = 0.4;
-let prezzoFinale = 0;
 
 const kmPercorsiStr = prompt("Quanti chilometri vuole percorrere?")
 const etaStr = prompt("Quanti anni ha?")
@@ -39,17 +38,14 @@ const etaStr = prompt("Quanti anni ha?")
 const kmPercorsi = parseInt(kmPercorsiStr);
 const eta = parseInt(etaStr);
 
-let prezzoBase = prezzoKm * kmPercorsi;
+const prezzoBase = prezzoKm * kmPercorsi;
+let prezzoFinale = prezzoBase;
 
 if (eta > 65) {
     prezzoFinale = prezzoBase - prezzoBase * scontoOver65;
-} else if (eta <= 18) {
+} else if (eta < 18) {
     prezzoFinale = prezzoBase - prezzoBase * scontoMinorenni;
-} else {
-    prezzoFinale = prezzoBase
 }
 
-let prezzoFinaleArrotondato = prezzoFinale.toFixed(2);
-
-let messaggio = `Il prezzo finale del biglietto è ${prezzoFinaleArrotondato}`
+let messaggio = `Il prezzo finale del biglietto è ${prezzoFinale.toFixed(2)}`
 console.log(messaggio);
