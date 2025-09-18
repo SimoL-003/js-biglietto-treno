@@ -4,15 +4,15 @@
 // Chiedi due numeri all’utente e poi chiedi se vuole "somma" o "differenza".
 // Stampa il risultato corrispondente.
 
-// let numberOneStr = prompt("Dimmi un numero");
-// let numberTwoStr = prompt("Dimmi un secondo numero");
+// const numberOneStr = prompt("Dimmi un numero");
+// const numberTwoStr = prompt("Dimmi un secondo numero");
 
-// let math = prompt("Vuoi effettuare la somma o la differenza?");
+// const math = prompt("Vuoi effettuare la somma o la differenza?");
 
-// let numberOne = parseInt(numberOneStr);
-// let numberTwo = parseInt(numberTwoStr);
+// const numberOne = parseInt(numberOneStr);
+// const numberTwo = parseInt(numberTwoStr);
 
-// result = 'Devi digitare "somma" o "differenza", tutto in minuscolo';
+// let result = 'Devi digitare "somma" o "differenza", tutto in minuscolo';
 
 // if (math === "somma") {
 //     result = numberOne + numberTwo
@@ -26,10 +26,16 @@
 // 2️⃣
 // Chiedi all'utente la sua età e comunichiamo l'anno di nascita.
 
+// const userAge = prompt("Quanti anni hai?");
+// const currentYear = 2025;
+
+// const birthYear = currentYear - userAge;
+// console.log(`Sei nato nell'anno ${birthYear}`);
+
 // 3️⃣
 // Chiedi all'utente il suo nome e stampa in console la stringa "ciao <nome_utente>".
 
-// let userName = prompt("Qual è il tuo nome?");
+// const userName = prompt("Qual è il tuo nome?");
 // console.log(`Ciao ${userName}`);
 
 
@@ -37,9 +43,9 @@
 // Chiedi all’utente il suo nome, poi chiedi il suo cognome, poi chiedi il suo colore preferito
 // Infine scrivi sulla pagina nomecognomecolorepreferito23
 
-// let userName = prompt("Qual è il tuo nome?");
-// let userLastName = prompt("Qual è il tuo cognome?");
-// let userColor = prompt("Qual è il tuo colore preferito?");
+// const userName = prompt("Qual è il tuo nome?");
+// const userLastName = prompt("Qual è il tuo cognome?");
+// const userColor = prompt("Qual è il tuo colore preferito?");
 // console.log(userName + userLastName + userColor);
 
 
